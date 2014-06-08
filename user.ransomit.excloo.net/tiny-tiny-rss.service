@@ -1,0 +1,12 @@
+[Unit]
+Description=Tiny Tiny RSS
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/usr/bin/docker start -a tiny-tiny-rss
+ExecStop=/usr/bin/docker stop -t 10 tiny-tiny-rss
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
