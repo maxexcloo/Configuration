@@ -1,5 +1,5 @@
 [Unit]
-After=docker.service haproxy-config.service
+After=docker.service
 Description=HAProxy Config
 
 [Service]

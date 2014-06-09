@@ -1,5 +1,5 @@
 [Unit]
-After=docker.service postgresql.service
+After=docker.service haproxy-config.service postgresql.service
 Description=Tiny Tiny RSS
 
 [Service]

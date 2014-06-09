@@ -1,5 +1,5 @@
 [Unit]
-After=docker.service
+After=docker.service haproxy-config.service
 Description=NNAX
 
 [Service]
