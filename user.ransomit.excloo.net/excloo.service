@@ -3,8 +3,8 @@ After=docker.service
 Description=Excloo
 
 [Service]
-ExecStart=/usr/bin/docker start -a http-excloo
-ExecStop=/usr/bin/docker stop -t 10 http-excloo
+ExecStart=/usr/bin/docker start -a excloo
+ExecStop=/usr/bin/docker stop -t 10 excloo
 Restart=always
 
 [Install]
