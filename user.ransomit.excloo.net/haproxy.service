@@ -1,7 +1,6 @@
 [Unit]
-Description=HAProxy
 After=docker.service
-Requires=docker.service
+Description=HAProxy
 
 [Service]
 ExecStart=/usr/bin/docker start -a haproxy

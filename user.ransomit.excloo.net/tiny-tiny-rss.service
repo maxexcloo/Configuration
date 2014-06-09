@@ -1,7 +1,6 @@
 [Unit]
+After=docker.service postgresql.service
 Description=Tiny Tiny RSS
-After=docker.service
-Requires=docker.service
 
 [Service]
 ExecStart=/usr/bin/docker start -a tiny-tiny-rss

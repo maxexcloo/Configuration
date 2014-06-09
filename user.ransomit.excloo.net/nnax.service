@@ -1,0 +1,11 @@
+[Unit]
+After=docker.service
+Description=NNAX
+
+[Service]
+ExecStart=/usr/bin/docker start -a nnax
+ExecStop=/usr/bin/docker stop -t 10 nnax
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,7 +1,6 @@
 [Unit]
-Description=Minecraft
 After=docker.service
-Requires=docker.service
+Description=Minecraft
 
 [Service]
 ExecStart=/usr/bin/docker start -a minecraft

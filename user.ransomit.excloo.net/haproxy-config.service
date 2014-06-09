@@ -1,7 +1,6 @@
 [Unit]
+After=docker.service haproxy-config.service
 Description=HAProxy Config
-After=docker.service
-Requires=docker.service
 
 [Service]
 ExecStart=/usr/bin/docker start -a haproxy-config

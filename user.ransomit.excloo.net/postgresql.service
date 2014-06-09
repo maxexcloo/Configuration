@@ -1,7 +1,6 @@
 [Unit]
-Description=PostgreSQL
 After=docker.service
-Requires=docker.service
+Description=PostgreSQL
 
 [Service]
 ExecStart=/usr/bin/docker start -a postgresql

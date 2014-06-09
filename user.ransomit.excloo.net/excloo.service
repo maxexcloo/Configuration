@@ -1,0 +1,11 @@
+[Unit]
+After=docker.service
+Description=Excloo
+
+[Service]
+ExecStart=/usr/bin/docker start -a excloo
+ExecStop=/usr/bin/docker stop -t 10 excloo
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
