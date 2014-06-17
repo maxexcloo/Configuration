@@ -4,7 +4,7 @@ Description=NNAX
 
 [Service]
 ExecStart=/usr/bin/docker start -a nnax
-ExecStop=/usr/bin/docker stop -t 10 nnax
+ExecStop=/usr/bin/docker stop nnax
 Restart=always
 
 [Install]

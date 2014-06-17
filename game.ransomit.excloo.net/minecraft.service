@@ -4,7 +4,7 @@ Description=Minecraft
 
 [Service]
 ExecStart=/usr/bin/docker start -a minecraft
-ExecStop=/usr/bin/docker stop -t 10 minecraft
+ExecStop=/usr/bin/docker stop minecraft
 Restart=always
 
 [Install]

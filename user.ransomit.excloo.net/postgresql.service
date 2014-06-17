@@ -4,7 +4,7 @@ Description=PostgreSQL
 
 [Service]
 ExecStart=/usr/bin/docker start -a postgresql
-ExecStop=/usr/bin/docker stop -t 10 postgresql
+ExecStop=/usr/bin/docker stop postgresql
 Restart=always
 
 [Install]

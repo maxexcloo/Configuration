@@ -4,7 +4,7 @@ Description=ZNC
 
 [Service]
 ExecStart=/usr/bin/docker start -a znc
-ExecStop=/usr/bin/docker stop -t 10 znc
+ExecStop=/usr/bin/docker stop znc
 Restart=always
 
 [Install]

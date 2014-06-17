@@ -4,7 +4,7 @@ Description=HAProxy
 
 [Service]
 ExecStart=/usr/bin/docker start -a haproxy
-ExecStop=/usr/bin/docker stop -t 10 haproxy
+ExecStop=/usr/bin/docker stop haproxy
 Restart=always
 
 [Install]
