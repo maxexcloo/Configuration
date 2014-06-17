@@ -1,0 +1,11 @@
+[Unit]
+After=docker.service
+Description=ZNC
+
+[Service]
+ExecStart=/usr/bin/docker start -a znc
+ExecStop=/usr/bin/docker stop -t 10 znc
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
