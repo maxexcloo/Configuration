@@ -1,11 +1,10 @@
-[Unit]
-After=docker.service
-Description=PostgreSQL
+[Install]
+WantedBy=multi-user.target
 
 [Service]
 ExecStart=/usr/bin/docker start -a postgresql
 ExecStop=/usr/bin/docker stop postgresql
 Restart=always
 
-[Install]
-WantedBy=multi-user.target
+[Unit]
+After=docker.service

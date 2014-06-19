@@ -1,0 +1,10 @@
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/docker start -a nnax
+ExecStop=/usr/bin/docker stop nnax
+Restart=always
+
+[Unit]
+After=docker.service haproxy.service

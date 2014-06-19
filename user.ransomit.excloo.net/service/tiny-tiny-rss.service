@@ -1,0 +1,10 @@
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/docker start -a tiny-tiny-rss
+ExecStop=/usr/bin/docker stop tiny-tiny-rss
+Restart=always
+
+[Unit]
+After=docker.service haproxy.service postgresql.service
