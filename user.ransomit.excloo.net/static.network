@@ -4,8 +4,8 @@ Name=ens3
 [Network]
 Address=103.25.58.86/24
 Gateway=103.25.58.1
-Address=2406:d501::9d59:2f84/64
-Gateway=
+Address=2406:d501::9d59:2f84/32
+Gateway=2406:d501::1
 DNS=8.8.8.8
 DNS=8.8.4.4
 DNS=2001:4860:4860::8888
