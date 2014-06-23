@@ -1,0 +1,10 @@
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/docker start -a haproxy
+ExecStop=/usr/bin/docker stop haproxy
+Restart=always
+
+[Unit]
+After=docker.service haproxy-config.service
